@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5e6; /* Keeping Home Page background unchanged */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 60px;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1500px;
+    padding: 15px 20px;
+    background-color: #173f1d; /* Navbar stays same */
+    position: fixed;
+    top: 0.75%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    border-radius: 10px;
+}
+
+.navbar .logo {
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding: 5px 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+/* About Us Highlight when scrolled */
+.nav-links a.highlight {
+    background-color: rgba(144, 238, 144, 0.4);
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    background-color: rgba(144, 238, 144, 0.4);
+    border-radius: 5px;
+}
+
+.nav-links span {
+    color: white;
+    font-size: 16px;
+}
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Full-screen sections */
+.about-us, .feedback-section, .our-team, .hero {
+    height: 100vh; /* Ensures full screen coverage */
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center content within sections */
+.about-container, .feedback-container, .team-container {
+    max-width: 80%;
+    text-align: center;
+}
+
+/* Navigation Bar - Fixed to top */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #2c5e42;
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+/* Hide overflowing sections */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Ensure the active section is highlighted */
+.active-section {
+    background-color: #1b3d2f; /* Slightly darker to indicate focus */
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+/* Hero Section */
+.hero {
+    background-color: #173f1d;
+    padding: 60px;
+    border-radius: 15px;
+    margin-top: 100px;
+    color: white;
+    width: 430px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 16px;
+    color: #D6D6D6;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.getstarted {
+    border: none;
+    padding: 15px 80px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #ff7f11;
+    color: white;
+}
+
+/* About Us Section */
+.about-us {
+    width: 80%;
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    margin-top: 500px; /* Ensures About Us appears after scrolling */
+    color: #173f1d;
+}
+
+.about-us h1 {
+    text-align:left;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-left {
+    width: 60%;
+    font-size: 18px;
+}
+
+.about-right {
+    width: 35%;
+}
+
+.about-right h2 {
+    margin-bottom: 15px;
+}
+
+.about-right ul {
+    list-style: none;
+}
+
+.about-right li {
+    margin-bottom: 10px;
+}
+
+.about-right a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #173f1d;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.about-right a:hover {
+    color: #ff7f11;
+}
+
+/* Our Team Section */
+.our-team {
+    width: 80%;
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    margin-top: 100px; /* Keeps spacing consistent */
+    color: #173f1d;
+}
+
+.our-team h1 {
+    text-align: left;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.team-member {
+    text-align: center;
+    width: 18%;
+}
+
+.team-member img {
+    width: 100%;
+    max-width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #173f1d;
+}
+
+.team-member p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Highlight effect */
+.nav-links a.highlight {
+    background-color: rgba(144, 238, 144, 0.4);
+    border-radius: 5px;
+}
+
+/* Feedback Section */
+.feedback-section {
+    width: 81%;
+    background-color: #2c5e42; /* Updated to match the given background */
+    padding: 40px;
+    border-radius: 15px;
+    margin-top: 200px; /* Ensures Feedback appears after scrolling */
+    color: #d4edda; /* Updated text color */
+}
+
+.feedback-section h1 {
+    text-align: left;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.feedback-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Center "Give Your Feedback" above the stars */
+.feedback-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Star Rating */
+.stars {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin-bottom: 10px;
+}
+
+.stars input {
+    display: none;
+}
+
+.stars label {
+    font-size: 30px;
+    color: #6c757d;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.stars input:checked ~ label,
+.stars label:hover,
+.stars label:hover ~ label {
+    color: #f8c471;
+}
+
+/* Feedback Input */
+textarea {
+    width: 100%;
+    height: 100px;
+    width:600px;
+    margin-top: 10px;
+    background-color: #1b3d2f;
+    color: #d4edda;
+    border: 1px solid #d4edda;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Submit Button */
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #dd5d0d;
+    color: #ffffff;
+    border: 1px solid #d4edda;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #f08336;
+}
+
+.feedback-right {
+    width: 35%;
+}
+
+.feedback-right img {
+    height:300px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
