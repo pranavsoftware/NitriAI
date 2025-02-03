@@ -3,47 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fitness Hub</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            margin-top: 20%;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #555;
-            font-size: 18px;
-        }
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 18px;
-            color: white;
-            background-color: #28a745;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .btn:hover {
-            background-color: #218838;
-        }
-    </style>
+    <title>NutriAI</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <div class="container">
-        <h1>Welcome to Our Fitness Website 💪</h1>
-        <p>Start your fitness journey today and achieve your goals!</p>
-        <a href="./login/index.html" class="btn">Get Started</a>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <span class="logo">NutriAi</span>
+        <div class="nav-links">
+            <a href="#">Features</a><span>|</span>
+            <a href="#about" id="about-link">About Us</a><span>|</span>
+            <a href="#feedback" id="feedback-link">Feedback</a><span>|</span>
+            <a href="#team" id="team-link">Our Team</a>
+
+        </div>
     </div>
 
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Make your health goals easily available and Rewarding</h1>
+        <br>
+        <p>Track calories, plan meals, and share with the community using our AI planner.</p>
+        <div class="buttons">
+            <button class="getstarted">Get Started</button>
+        </div>
+    </div>
+
+    <!-- About Us Section (Appears after scrolling) -->
+    <div class="about-us" id="about">
+        <h1>About Us</h1>
+        <div class="about-container">
+            <div class="about-left">
+                <p style="font-family: Arial, sans-serif">NutriAi is your personalized health assistant, offering meal plans, an AI-powered recipe generator, auto calorie counting, workout tracking, and social engagement features. It tailors nutrition and fitness to your goals, making healthy living easier and more enjoyable. Stay on track with personalized suggestions and motivation from a supportive community. Simplify your health journey with NutriAi!🌱💪
+                </p>
+            </div>
+            <div class="about-right">
+                <h2>Connect With Us</h2>
+                <ul>
+                    <li><a href="https://www.instagram.com/"><img src="../assets/instalogo.png" style="height: 18px; width: 18px;"> Instagram</a></li>
+                    <li><a href="https://in.linkedin.com"><img src="../assets/linkedin.png" style="height: 18px; width: 18px;"> LinkedIn</a></li>
+                    <li><a href="https://www.youtube.com/"><img src="../assets/youtube.png" style="height: 18px; width: 20px;"> YouTube</a></li>
+                    <li><a href="#"><img src="../assets/contact.png" style="height: 20px; width: 18px;"> Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <section id="feedback" class="feedback-section">
+        <h1>Feedback</h1>
+        <div class="feedback-container">
+            <div class="feedback-left">
+                <h2 class="feedback-title">Give Your Feedback</h2>
+                <form id="feedbackForm">
+                    <div class="stars">
+                        <input type="radio" name="rating" id="star5" value="5"><label for="star5">★</label>
+                        <input type="radio" name="rating" id="star4" value="4"><label for="star4">★</label>
+                        <input type="radio" name="rating" id="star3" value="3"><label for="star3">★</label>
+                        <input type="radio" name="rating" id="star2" value="2"><label for="star2">★</label>
+                        <input type="radio" name="rating" id="star1" value="1"><label for="star1">★</label>
+                    </div>
+                    <textarea id="feedback" placeholder="Write your feedback here..."></textarea>
+                    <br>
+                    <button type="submit">Submit Feedback</button>
+                </form>
+            </div>
+            <div class="feedback-right">
+                <img src="../assets/feedback.png" alt="Feedback Illustration">
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="our-team" id="team">
+        <h1>Our Team</h1>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="../assets/hansaj.jpg" alt="Team Member 1">
+                <p>UI/UX Designer</p>
+            </div>
+            <div class="team-member">
+                <img src="../assets/satvik.jpg" alt="Team Member 2">
+                <p>Frontend Developer</p>
+            </div>
+            <div class="team-member">
+                <img src="../assets/sahil.jpg" alt="Team Member 3">
+                <p>Frontend Developer</p>
+            </div>
+            <div class="team-member">
+                <img src="../assets/pranav.jpg" alt="Team Member 4">
+                <p>Backend Developer</p>
+            </div>
+            <div class="team-member">
+                <img src="../assets/ajitesh.jpg" alt="Team Member 5">
+                <p>API Integrator</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <p></p>
+    <script defer src="script.js"></script>
 </body>
 </html>
