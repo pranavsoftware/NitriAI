@@ -49,6 +49,6 @@ document.querySelector("form").addEventListener("submit", async (e) => {
 // Automatically Check User Status on Page Load
 onAuthStateChanged(auth, (user) => {
   if (user && user.emailVerified) {
-    window.location.href = "/dashboard/index.html"; // Redirect if already logged in and verified
+    window.location.href = "../dashboard/index.html"; // Redirect if already logged in and verified
   }
 });
