@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            
+        }
+        .login-btn {
+            width: 95%;
+            margin-left: 11.5px;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            background-color: grey;
+            font-weight: bold;
+            font-size: medium;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .login {
+            padding: 10px 50px;
+            border: solid transparent;
+            border-radius: 50px;
+            background-color: grey;
+            color: white;
+            font-weight: bold;
+            font-size: large;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .login-btn:hover,
+        .login:hover {
+            background-color: rgba(144, 238, 144, 0.4);
+        }
+
+        input,
+        select {
+            background-color: white;
+            padding: 10px;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            width: 100px; 
+            height: auto;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 1500px;
+            padding: 15px 20px;
+            background-color: #173f1d;
+            border-radius: 10px;
+            position: fixed;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .navbar .logo {
+            font-weight: bold;
+            color: white;
+            font-size: 30px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 17px;
+            padding: 5px 10px;
+            transition: background 0.3s ease-in-out;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .nav-links a:hover {
+            background-color: rgba(144, 238, 144, 0.4); 
+            border-radius: 5px;
+        }
+
+        .nav-links span {
+            color: white;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body style="margin-left: 35%; background-color: #f5f5e6;">
+    <div class="navbar">
+        <span class="logo">NutriAi</span>
+        <div class="nav-links">
+            <a href="#">Features</a><span>|</span>
+            <a href="#">About Us</a><span>|</span>
+            <a href="#">Feedback</a><span>|</span>
+            <a href="#">Our Team</a>
+        </div>
+    </div>
+    <div style="background-color: #173f1d; padding: 20px; border-radius: 10px; width: 400px; margin-top: 150px;">
+        
+        <div class="image-container">
+            <img src="../assets/vector1-removebg-preview.png" alt="User Icon">
+        </div>
+        <div style="display: flex; justify-content: space-around; margin-bottom: 20px;">
+            <a href="/login/login.html">
+                <button type="button" class="login">Login</button>
+              </a>
+              
+            <button style="padding: 10px 60px; border: solid white; border-radius: 50px; background-color: #ff7601; 
+            font-weight: bold; font-size: large; color: white; cursor: pointer;">Signup</button>
+        </div>
+        <form>
+            <table style="width: 100%; border-spacing: 10px; margin-bottom: 20px;">
+                <tr>
+                    <td colspan="2">
+                        <input type="text" placeholder="Applicant's Full Name" style="width: 100%;">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 50%;">
+                        <input type="text" placeholder="Date Of Birth" style="width: 95%;">
+                    </td>
+                    <td style="width: 50%;">
+                        <select style="width:100%;">
+                            <option>Select Gender</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="email" placeholder="Enter Your E-mail Address" style="width: 100%;">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" placeholder="Enter Password" style="width: 100%;">
+                    </td>
+                </tr>
+            </table>
+            <script type="module" src="/signup/script.js"></script>
+            <button type="submit" class="login-btn" id="register-btn">Register</button>
+        </form>
+        <br>
+    </div>
+</body>
+
+</html>
