@@ -57,7 +57,7 @@ if (registerBtn) {
 
             // Redirect user to login page after successful signup
             setTimeout(() => {
-                window.location.href = "../login page2/login.html";
+                window.location.href = "../login/index.html";
             }, 2000);
         } catch (error) {
             alert("❌ Error: " + error.message);
