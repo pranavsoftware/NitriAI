@@ -36,7 +36,7 @@ document.querySelector("form").addEventListener("submit", async (e) => {
     // Check if the user is verified
     if (user.emailVerified) {
       alert("Login successful! Redirecting to dashboard...");
-      window.location.href = "dashboard.html"; // Redirect to the dashboard
+      window.location.href = "../dashboard/index.html"; // Redirect to the dashboard
     } else {
       alert("Please verify your email before logging in. Check your inbox for the verification email.");
       await signOut(auth); // Logout user if not verified
